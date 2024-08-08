@@ -18,11 +18,14 @@ validar se o usuário vai se vincular a uma família existem ou se vai criar uma
 
 DEFINIÇÕES TÉCNICAS
 
-Java 17+, spring framework, mave, postgresql.
+Java 8+, spring framework, mave, postgresql.
+
+Projeto se conecta a um banco de dados postgresql com as tabelas user e family criadas.
 
 Repositório :
 
 Criar uma tratativa de erro com a classe Exception
+
 
 validar se o usuário vai se vincular a uma família existete ou se vai criar uma nova família;
 
