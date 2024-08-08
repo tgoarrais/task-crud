@@ -1,22 +1,17 @@
 package com.meva.finance.dto;
 
-
 import com.meva.finance.model.Family;
 import lombok.*;
 
-
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 
 @AllArgsConstructor // Gera um construtor com todos os atributos da classe
 @NoArgsConstructor // Gera um construtor sem argumentos
 @Data
 public class FamilyDto {
-    @NotNull
-    @NotEmpty
+    @NotBlank
     private Long idFamily;
-    @NotNull
-    @NotEmpty
+    @NotBlank
     private String description;
 
     // Construtor que aceita um objeto Family
@@ -26,7 +21,7 @@ public class FamilyDto {
     }
 
     // Método que converte um FamilyDto em um Family
-    public Family converterFamily(){
+    public Family converterFamily() {
         Family family = new Family(); // Cria uma nova instância de Family
         family.setIdFamily(idFamily); // Define o id da família com o id do DTO
         family.setDescription(description); // Define a descrição da família com a descrição do DTO

@@ -9,7 +9,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -20,7 +19,7 @@ public class UserDto {
     private String name; // Nome do usuário
 
     @CPF
-    private String cpf;  // CPF do usuário
+    private String cpf; // CPF do usuário
     @NotBlank
     private String city; // Cidade do usuário
     @NotBlank
@@ -56,8 +55,4 @@ public class UserDto {
         return user; // Retorna o objeto User criado
     }
 
-    // Método para definir os dados da família do usuário
-    public void setFamily(FamilyDto familyDto) {
-        this.familyDto = familyDto;
-    }
 }
