@@ -14,22 +14,23 @@ import java.time.LocalDate;
 @Data
 public class UserDto {
 
-    // Declaração dos atributos da classe UserDto
+    @CPF
+    private String cpf; // CPF do usuário
+
     @NotBlank
     private String name; // Nome do usuário
 
-    @CPF
-    private String cpf; // CPF do usuário
-    @NotBlank
-    private String city; // Cidade do usuário
-    @NotBlank
-    private String state; // Estado do usuário
+    @Pattern(regexp = "(?i)[MF]", message = "Insira um gênero válido!")
+    private String genre; // Gênero do usuário
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private LocalDate birth;// Data de nascimento do usuário
 
-    @Pattern(regexp = "(?i)[MF]", message = "Insira um gênero válido!")
-    private String genre; // Gênero do usuário
+    @NotBlank
+    private String state; // Estado do usuário
+
+    @NotBlank
+    private String city; // Cidade do usuário
 
     private FamilyDto familyDto; // Dados da família do usuário
 

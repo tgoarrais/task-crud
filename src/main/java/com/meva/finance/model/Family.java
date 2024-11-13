@@ -19,7 +19,7 @@ public class Family {
     @Id // Indica que o campo 'idFamily' é a chave primária desta entidade
     @SequenceGenerator(name = "id_family", sequenceName = "id_family", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_family") // Essas anotações em conjunto garantem
-                                                                                 // que o campo idFamily seja
+    // que o campo idFamily seja
     // automaticamente gerado pelo banco de dados usando uma sequência,
     // proporcionando IDs únicos para cada entrada na tabela family.
     @Column(name = "id_family") // Mapeia o campo 'idFamily' para a coluna 'id_family' no banco de dados

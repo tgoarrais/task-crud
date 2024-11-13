@@ -27,7 +27,7 @@ public class UserController {
 		try {
 			// Chama o serviço para registrar o usuário.
 			userService.registerUser(userDto);
-			return ResponseEntity.ok("Usuario registrado");
+			return ResponseEntity.status(HttpStatus.CREATED).body("Usuario registrado");
 		} catch (CpfValidateException e) {
 			return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
 		}
