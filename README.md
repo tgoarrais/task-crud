@@ -1,32 +1,25 @@
-[BACKEND] Create Service for Users - POST - GET - PUT - DELETE - Validar Family;
+## PROPOSTA DO PROJETO
 
-PROBLEMA A SER RESOLVIDO
+Criação de uma API Rest Backend de uma Aplicação que cadastra usuarios em um banco de dados e valida qual familia ele pertence
+projeto faz parte de um App de gestão financeira onde os gastos são acumulados e gerenciados por familia.
 
-Permitir que usuários realize um cadastro para usar o app;
+## DEFINIÇÕES TÉCNICAS
 
-ENTREGA DE VALOR AO USUÁRIO
+### Java 8+
+### Maven para gerenciar dependências.
+### spring framework(Spring boot, Spring MVC, Spring data) 
+### Junit e Mockito para testes unitarios
+### Postgresql banco de dados
+### Swagger
+### Lombok
 
-Endpoint que permita o cadastro e gere um usuário e senha para login na plataforma;
+### OBS: A maioria das classes estão com comentários informando detalhes do que cada passo ou anotaçõa faz, 
+### isso não é uma boa prática porque polue o codigo, mas como são projetos que guardo como estudo e 
+### até por uma didatica melhor, resolvi comentar a maioria das coisas.
 
-PRÉ REQUISITOS
+##
 
-O serviço deverá ser capaz de cadastrar, alterar ou remover usuários;
+## Esse projeto é baseado no meu dia a dia como desenvolvedor backend.
 
-REGRAS DE NEGÓCIO
 
-validar se o usuário vai se vincular a uma família existem ou se vai criar uma nova família;
 
-DEFINIÇÕES TÉCNICAS
-
-Java 17+, spring framework, mave, postgresql.
-
-Repositório :
-
-Criar uma tratativa de erro com a classe Exception
-
-validar se o usuário vai se vincular a uma família existete ou se vai criar uma nova família;
-
-DEFINITION OF DONE
-o que deve ser entregue ?
-
-Fornecer uma Endpoint capaz de cadastrar/alterar e deletar um usuário;
